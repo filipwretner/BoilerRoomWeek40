@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+          <div class="container">
+            <!-- Logotyp med alt-text för tillgänglighet -->
+            <div class="logo-container">
+              <a href="#" class="logo">
+                <h1>Golf Tournament</h1>
+              </a>
+            </div>
+            <!-- Hamburgermeny med aria-label -->
+            <div
+              class="menu-icon"
+              onclick="toggleMenu()"
+              aria-label="Öppna navigeringsmeny"
+            >
+              &#9776;
+            </div>
+            <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#register">Register</a></li>
+              <li><a href="mitt projekt/turnering.html">Tournament</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
     <main>
         <section class="contact-info">
             <h2>Contact Us</h2>
@@ -57,5 +87,23 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+              <p>&copy; 2024 Golf Tournament. Alla rättigheter förbehållna.</p>
+              <p>
+                Allmänt ansvar och användarvillkor gäller för deltagande i
+                turneringen.
+              </p>
+            </div>
+          </footer>
+      
+          <script>
+            function toggleMenu() {
+              const navLinks = document.querySelector(".nav-links");
+              navLinks.classList.toggle("active");
+            }
+          </script>
 </body>
 </html>

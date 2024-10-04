@@ -6,10 +6,40 @@
     <meta name="description" content="Webbshop för golfutrustning och kläder">
     <title>Shop</title>
     <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main></main>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+          <div class="container">
+            <!-- Logotyp med alt-text för tillgänglighet -->
+            <div class="logo-container">
+              <a href="#" class="logo">
+                <h1>Golf Tournament</h1>
+              </a>
+            </div>
+            <!-- Hamburgermeny med aria-label -->
+            <div
+              class="menu-icon"
+              onclick="toggleMenu()"
+              aria-label="Öppna navigeringsmeny"
+            >
+              &#9776;
+            </div>
+            <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#register">Register</a></li>
+              <li><a href="mitt projekt/turnering.html">Tournament</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <main>
         <section class="product-grid" aria-label="Golfprodukter">
             <article class="product-card" tabindex="0">
                 <img src="images/driver.avif" alt="Driver, Titleist TSR1">
@@ -96,6 +126,24 @@
             </article>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+          <p>&copy; 2024 Golf Tournament. Alla rättigheter förbehållna.</p>
+          <p>
+            Allmänt ansvar och användarvillkor gäller för deltagande i
+            turneringen.
+          </p>
+        </div>
+      </footer>
+  
+      <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector(".nav-links");
+          navLinks.classList.toggle("active");
+        }
+      </script>
 </body>
 
 </html>
