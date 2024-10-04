@@ -1,0 +1,95 @@
+/* Grundläggande stilinställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FCFAEE;
+    color: #333;
+    line-height: 1.6;
+    padding: clamp(10px, 5%, 20px);
+}
+
+
+/* Produktkort */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #ECDFCC;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product-card h2 {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: #DA8359;
+    margin-bottom: 10px;
+    min-height: 3rem;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-top: 10px 0;
+}
+
+.product-card button {
+    background-color: #DA8359;
+    color: #FCFAEE;
+    border: none;
+    padding: 10px 15px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    cursor: pointer;
+    margin-top: auto;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c3744f;
+}
+
+button:focus {
+    outline: 2px solid #DA8359;
+    outline-offset: 3px;
+}
+
+
+/* Responsiv design för stora skärmar */
+@media screen and (min-width: 1024px) {
+    .product-grid {
+        gap: 30px;
+    }
+    
+    .product-card {
+        padding: 20px;
+    }
+}
+
+/* Responsiv design för mindre skärmar */
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
