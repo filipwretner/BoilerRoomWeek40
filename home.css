@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Global Background */
+body {
+    background: #FCFAEE; /* Main light background */
+}
+
+/* Hero Section Styling */
+.hero {
+    background: url('https://images.unsplash.com/photo-1519985176271-adb1088fa94c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEyfHxnb2xmfGVufDB8fHx8MTYzMDczMTY0NQ&ixlib=rb-1.2.1&q=80&w=1080')
+    no-repeat center center/cover; /* Placeholder golf image */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FCFAEE; /* Light text color */
+    position: relative;
+}
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(165, 182, 141, 0.6); /* Slight green overlay */
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+}
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.btn-primary {
+    background: #DA8359; /* Button primary color */
+    color: #FCFAEE; /* Light text */
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.3s;
+}
+.btn-primary:hover {
+    background: #A5B68D; /* Swap colors on hover */
+    color: #FCFAEE;
+    transform: scale(1.05);
+}
+/* About Us Section */
+.about-section {
+    padding: 60px 20px;
+    background: #ECDFCC; /* Light tan background */
+    text-align: center;
+}
+.about-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+.about-intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.about-mission,
+.about-unique {
+    flex: 1;
+    background: #FCFAEE; /* Light background for cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-mission h3,
+.about-unique h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.about-mission p,
+.about-unique p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* Tournaments Section Styling */
+.tournaments-section {
+    padding: 60px 20px;
+    background: #FCFAEE; /* Main light background */
+}
+.tournaments-section .container {
+    text-align: center;
+}
+.tournaments-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+.tournament-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+.tournament-card {
+    background: #ECDFCC; /* Light tan background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tournament-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.tournament-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.tournament-card .date,
+.tournament-card .location {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+.btn-primary {
+    background: #DA8359;
+    color: #FCFAEE;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 15px;
+}
+.btn-primary:hover {
+    background: #A5B68D;
+    color: #FCFAEE;
+    transform: scale(1.05);
+}
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background: #A5B68D; /* Accent color */
+    color: #FCFAEE;
+    text-align: center;
+    position: relative;
+}
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.contact-section p {
+    margin-bottom: 30px; /* Space between text and button */
+}
+.btn-secondary {
+    background: #DA8359; /* Secondary button color */
+    color: #FCFAEE;
+    padding: 15px 40px; /* Increased padding for a larger button */
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block; /* Ensure button doesn't cover other elements */
+}
+.btn-secondary:hover {
+    background: #A5B68D;
+    color: #FCFAEE;
+    transform: scale(1.05);
+}
