@@ -10,7 +10,6 @@ body {
     background-color: #FCFAEE;
     color: #333;
     line-height: 1.6;
-    padding: clamp(10px, 5%, 20px);
 }
 
 
