@@ -1,0 +1,106 @@
+/* Färgschema och stil för turneringshemsidan */
+:root {
+    --primary-color: #A5B68D;  /* Mörkgrön */
+    --secondary-color: #ECDFCC;  /* Beige */
+    --background-color: #FCFAEE;  /* Ljus bakgrund */
+    --accent-color: #DA8359;  /* Brun/orange accent */
+    --text-color-dark: #333333;  /* Mörk text */
+    --text-color-light: #ffffff;  /* Ljus text */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+.tournament-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tournament-card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tournament-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tournament-card h3 {
+    font-size: 1.75em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.tournament-card p {
+    margin-bottom: 8px;
+    color: var(--text-color-dark);
+}
+
+.register-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.register-btn:hover {
+    background-color: var(--accent-color);
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+/* Grundläggande styling för turneringsbilder */ 
+.tournament-card img {
+    width: 100%;  
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+} 
