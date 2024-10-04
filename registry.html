@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Golf Tournament Registration</title>
+    <link rel="stylesheet" href="registry.css">
+</head>
+<body>
+    <!-- Skip to content link for keyboard navigation -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <div class="container" id="main-content">
+        <h1>Golf Tournament Registration</h1>
+        <!-- Registration Form -->
+        <form action="#" method="POST" aria-live="polite">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-desc">
+                <small id="name-desc">Please enter your full name.</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-desc">
+                <small id="email-desc">Please enter a valid email address.</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required aria-required="true" aria-describedby="phone-desc">
+                <small id="phone-desc">Enter your phone number with area code.</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="handicap">Golf Handicap</label>
+                <input type="number" id="handicap" name="handicap" min="0" max="36" required aria-required="true" aria-describedby="handicap-desc" title="Enter your golf handicap between 0 and 36">
+                <small id="handicap-desc">Your golf handicap should be between 0 and 36.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="team">Team Name (Optional)</label>
+                <input type="text" id="team" name="team" aria-describedby="team-desc">
+                <small id="team-desc">Enter your team name, if applicable.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="shirt-size">Shirt Size</label>
+                <select id="shirt-size" name="shirt-size" required aria-required="true" aria-describedby="shirt-size-desc">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                </select>
+                <small id="shirt-size-desc">Select your shirt size.</small>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-submit" aria-label="Submit the registration form">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
