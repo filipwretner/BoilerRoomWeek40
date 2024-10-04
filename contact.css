@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FCFAEE; /* 背景色 */
+    margin: 0;
+    padding: 20px;
+}
+
+
+h2 {
+    color: #DA8359; /* セクションタイトルの色 */
+    margin-top: 30px;
+}
+
+
+p {
+    color: black; /* 本文テキストの色 */
+    line-height: 1.6;
+}
+
+
+section {
+    margin-bottom: 40px; /* セクション間のスペース */
+}
+
+
+.contact-info, .contact-form {
+    background-color: #ECDFCC; /* フォームと情報の背景 */
+    padding: 20px;
+    border-radius: 10px; /* 角を丸く */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 深みのある影 */
+}
+
+
+.form-group {
+    margin-bottom: 15px; /* フォーム要素間のスペース */
+}
+
+
+label {
+    color: black; /* ラベルの色 */
+    font-weight: bold; /* ラベルを太字に */
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* フル幅 */
+    padding: 12px; /* 増加したパディング */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #DA8359; /* ボーダーの色 */
+    border-radius: 5px; /* 角を丸く */
+    transition: border 0.3s; /* ボーダーのスムーズな遷移 */
+    font-size: 14px; /* 一貫したフォントサイズ */
+    box-sizing: border-box; /* パディングが幅に含まれるように */
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #A5B68D; /* フォーカス時のボーダー色 */
+    outline: none; /* アウトラインを削除 */
+}
+
+
+.form-actions {
+    text-align: center; /* ボタンを中央に配置 */
+    margin-top: 20px; /* ボタンの上にスペース */
+}
+
+
+input[type="submit"] {
+    background-color: #DA8359; /* ボタンの背景色 */
+    color: white; /* ボタンのテキスト色 */
+    padding: 12px 30px; /* ボタンのパディングを増加 */
+    border: none;
+    border-radius: 5px; /* 角を丸く */
+    cursor: pointer; /* ホバー時にポインターに */
+    font-weight: bold; /* ボタンテキストを太字に */
+    transition: background-color 0.3s; /* スムーズな遷移 */
+    font-size: 16px; /* フォントサイズを増加 */
+}
+
+
+input[type="submit"]:hover {
+    background-color: #A5B68D; /* ホバー時の濃い色 */
+}
+
+
+.map {
+    margin-top: 40px; /* 地図の上にスペース */
+}
