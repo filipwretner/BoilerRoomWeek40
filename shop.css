@@ -38,6 +38,10 @@ body {
     color: #DA8359;
     margin-bottom: 10px;
     min-height: 3rem;
+    max-height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 .product-card img {
