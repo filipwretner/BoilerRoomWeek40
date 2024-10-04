@@ -1,17 +1,6 @@
 /* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
 
-body {
-    background-color: #FCFAEE;
-    color: #333;
-}
-
-.container {
+.registryContainer {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
@@ -21,7 +10,7 @@ body {
     text-align: center;
 }
 
-h1 {
+#registryTitle {
     color: #DA8359;
     margin-bottom: 30px;
     font-size: 2rem;

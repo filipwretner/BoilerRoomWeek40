@@ -4,15 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Registration form for Golf Tournament hosting">
     <title>Golf Tournament Registration</title>
     <link rel="stylesheet" href="registry.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+       <!-- Navbar -->
+       <header>
+        <nav class="navbar">
+          <div class="container">
+            <!-- Logotyp med alt-text för tillgänglighet -->
+            <div class="logo-container">
+              <a href="home.html" class="logo">
+                <h1>Golf Tournament</h1>
+              </a>
+            </div>
+            <!-- Hamburgermeny med aria-label -->
+            <div
+              class="menu-icon"
+              onclick="toggleMenu()"
+              aria-label="Öppna navigeringsmeny"
+            >
+              &#9776;
+            </div>
+            <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="registry.html">Register</a></li>
+              <li><a href="mitt projekt/turnering.html">Tournament</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
     <!-- Skip to content link for keyboard navigation -->
     <a href="#main-content" class="skip-link">Skip to content</a>
 
-    <div class="container" id="main-content">
-        <h1>Golf Tournament Registration</h1>
+    <div class="registryContainer" id="main-content">
+        <h1 id="registryTitle">Golf Tournament Registration</h1>
         <!-- Registration Form -->
         <form action="#" method="POST" aria-live="polite">
             <div class="form-group">
@@ -61,5 +93,24 @@
             </div>
         </form>
     </div>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+      <p>&copy; 2024 Golf Tournament. Alla rättigheter förbehållna.</p>
+      <p>
+        Allmänt ansvar och användarvillkor gäller för deltagande i
+        turneringen.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("active");
+    }
+  </script>
+
 </body>
 </html>
