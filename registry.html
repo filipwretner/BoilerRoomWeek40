@@ -14,6 +14,7 @@
        <!-- Navbar -->
        <header>
         <nav class="navbar">
+
           <div class="container">
             <!-- Logotyp med alt-text för tillgänglighet -->
             <div class="logo-container">
@@ -22,13 +23,10 @@
               </a>
             </div>
             <!-- Hamburgermeny med aria-label -->
-            <div
-              class="menu-icon"
-              onclick="toggleMenu()"
-              aria-label="Öppna navigeringsmeny"
-            >
+            <div class="menu-icon" onclick="toggleMenu()" aria-label="Öppna navigeringsmeny">
               &#9776;
             </div>
+
             <ul class="nav-links">
               <li><a href="home.html">Home</a></li>
               <li><a href="registry.html">Register</a></li>
@@ -36,7 +34,9 @@
               <li><a href="contact.html">Contact</a></li>
               <li><a href="shop.html">Shop</a></li>
             </ul>
+
           </div>
+
         </nav>
       </header>
 
@@ -45,8 +45,10 @@
 
     <div class="registryContainer" id="main-content">
         <h1 id="registryTitle">Golf Tournament Registration</h1>
+
         <!-- Registration Form -->
         <form action="#" method="POST" aria-live="polite">
+
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-desc">
@@ -96,6 +98,7 @@
 
     <!-- Footer -->
 <footer>
+
     <div class="container">
       <p>&copy; 2024 Golf Tournament. Alla rättigheter förbehållna.</p>
       <p>
@@ -103,7 +106,8 @@
         turneringen.
       </p>
     </div>
-  </footer>
+
+</footer>
 
   <script>
     function toggleMenu() {
